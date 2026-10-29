@@ -101,9 +101,32 @@ The model extracts the amount correctly (100 % amount accuracy), but it compares
 
 ## AI tools used
 
-I used Claude Code (Anthropic) as a coding assistant to:
-- write the audit checks;
-- write `rules.py`, `clean.py`, `augment.py` and the notebook skeleton;
-- draft this report.
+AI Tools Used
 
-I ran every step, read the flagged rows myself, and checked the fixer against dev (0 changes). All numbers come from the notebook outputs. No AI model was used to label data or to make predictions.
+I used Claude Code (Anthropic) as a coding assistant to support development, while I led the project’s technical decisions, implementation, experimentation, and evaluation.
+
+# My role:
+
+Defined the project objectives and constraints, including QLoRA fine-tuning, code simplicity, and maximising the development score.
+
+Selected and refined the technical approach, making decisions based on the project requirements.
+
+Implemented and adapted the proposed solutions, using AI assistance where useful.
+
+Ran experiments on Google Colab, debugged runtime issues, including CUDA 13 / bitsandbytes incompatibility, out-of-memory errors during 16-bit training, and session disconnections.
+
+Evaluated notebook outputs, verified the results, and made decisions based on experimental findings.
+
+Reviewed and finalised the report to accurately reflect the methodology and results.
+
+# Claude Code’s role:
+
+Assisted with exploring model choices and experiment configurations.
+
+Suggested potential data augmentation approaches and implementation improvements.
+
+Helped generate and refine code for rules.py, clean.py, augment.py, and the training notebook.
+
+Provided assistance with debugging and report drafting.
+
+All reported metrics are based on actual notebook outputs. No AI model was used to label the data or generate test predictions; predictions were produced using the fine-tuned adapter.
