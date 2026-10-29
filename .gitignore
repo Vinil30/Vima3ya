@@ -1,0 +1,6 @@
+data/
+__pycache__/
+runs/
+adapters/
+preds/
+*.zip
